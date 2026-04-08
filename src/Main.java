@@ -25,7 +25,8 @@ class Character {
     void showStatus(){
         System.out.println(name + " HP：" + hp + " MP：" + mp);
     }
-
+  
+    //git版本測試用註解
     // ⭐ 普通攻擊（0~200）
     void normalAttack(Character target){
         int damage = rand.nextInt(201); // 0~200
@@ -78,7 +79,10 @@ class Character {
 }
 
 public class Main {
+    static final String VERSION = "1.0.1";
+
     public static void main(String[] args) {
+        System.out.println("=== HaloWord 版本 " + VERSION + " ===");
 
         Character hero = new Character("勇者", 1000, 500);
         Character monster = new Character("怪物", 1200, 300);
